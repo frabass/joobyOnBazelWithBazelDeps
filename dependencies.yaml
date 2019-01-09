@@ -18,12 +18,13 @@ dependencies:
       lang: java
       modules: ["", "netty"]
       version: "1.5.1"
+  io.netty:
+    netty-transport-native-unix-common:
+      lang: java
+      version: "4.1.27.Final"
 
+# Add if any Netty dep is missing
 #  io.netty:
-#    netty-transport-native-epoll:jar:linux-x86_64:
+#    netty-all:
 #      lang: java
 #      version: "4.1.27.Final"
-#    netty-tcnative-boringssl-static:jar:linux-x86_64:
-#      lang: java
-#      version: "2.0.8.Final"
-#

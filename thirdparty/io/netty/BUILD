@@ -147,3 +147,19 @@ java_library(
 )
 
 
+
+java_library(
+    name = "netty_transport_native_unix_common",
+    exports = [
+        "//external:jar/io/netty/netty_transport_native_unix_common"
+    ],
+    runtime_deps = [
+        ":netty_common",
+        ":netty_transport"
+    ],
+    visibility = [
+        "//visibility:public"
+    ]
+)
+
+
